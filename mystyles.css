@@ -1,0 +1,113 @@
+.the_parent {
+    display: flex;
+    align-items: center;
+}
+
+.shield {
+    display: inline-block;
+    margin-left: 5px;
+    position: relative;
+    margin-bottom: -20px;
+    min-width: 45px;
+}
+
+.shield img {
+    width: 20px;
+    height: 20px;
+}
+
+.shield span {
+    display: none;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    color: black;
+    background: #f2f2f2;
+}
+.shield span img {
+    text-align: center;
+    margin: 0px 1px 1px 0;
+    width: 40px;
+    height: 40px;
+}
+
+#logo:hover + #logo_hover {
+    display: block;
+    position: absolute;
+    top: 1;
+    left: 30;
+    z-index: 1000;
+    width: auto;
+    max-width: 320px;
+    min-width: 60px;
+    min-height: 26px;
+    border: 1px solid black;
+    margin-top: 12px;
+    margin-left: 32px;
+    overflow: hidden;
+    padding: 8px;
+    text-align: center;
+}
+
+#status_ok:hover ~ #status_ok_hover {
+    display: block;
+    position: absolute;
+    top: 1;
+    /* left: 0; */
+    right: 0;
+    z-index: 1000;
+    width: auto;
+    max-width: 320px;
+    min-width: 150px;
+    min-height: 26px;
+    border: 1px solid black;
+    margin-top: 12px;
+    margin-left: 32px;
+    overflow: hidden;
+    padding: 8px;
+    text-align: center;
+}
+
+#status_nok:hover ~ #status_nok_hover {
+    display: block;
+    position: absolute;
+    top: 1;
+    right: 0;
+    z-index: 1000;
+    width: auto;
+    max-width: 320px;
+    min-width: 150px;
+    min-height: 26px;
+    border: 1px solid black;
+    margin-top: 12px;
+    margin-left: 32px;
+    overflow: hidden;
+    padding: 8px;
+    text-align: center;
+}
+
+#status_medium:hover ~ #status_medium_hover {
+    display: block;
+    position: absolute;
+    top: 1;
+    right: 0;
+    z-index: 1000;
+    width: auto;
+    max-width: 320px;
+    min-width: 150px;
+    min-height: 26px;
+    border: 1px solid black;
+    margin-top: 12px;
+    margin-left: 32px;
+    overflow: hidden;
+    padding: 8px;
+    text-align: center;
+}
+
+.the_parent a {
+    white-space: nowrap;
+}
+
+#logo {
+    float: right;
+}

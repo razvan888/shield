@@ -1,0 +1,35 @@
+{
+    "manifest_version": 2,
+    "name": "Shield",
+    "description": "Be safe while browsing the internet.",
+    "version": "1.0.1",
+    "icons": {
+        "16": "obj-16x16.png",
+        "32": "obj-32x32.png",
+        "48": "obj-48x48.png",
+        "128": "obj-128x128.png"
+    },
+    
+    "options_page": "options.html",
+    "browser_action": {
+        "default_icon": "obj-128x128.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://google.com/*", "*://*.google.com/","http://*/*","https://*/*"],
+            "js": ["script.js"],
+            "css": ["mystyles.css"],
+            "run_at":"document_end"
+        }
+    ],
+    "permissions": [
+        "storage",
+        "tabs",
+        "https://google.com/*",
+        "*://*.google.com/"
+    ],
+    "background": {
+        "scripts": ["./background.js"]
+    }
+}
